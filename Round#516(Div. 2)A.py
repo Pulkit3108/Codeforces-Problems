@@ -1,0 +1,26 @@
+A=list(map(int,input().split()))
+A.sort()
+c1=0
+c2=0
+c3=0
+r=0
+if(A[0]+A[1]>A[2]):
+    c1=1
+if(A[1]+A[2]>A[0]):
+    c2=1
+if(A[2]+A[0]>A[1]):
+    c3=1
+if(c1==0):
+    x=A[2]-(A[0]+A[1])+1
+    r+=x
+    c1=1
+if(c2==0):
+    x=A[0]-(A[2]+A[1])+1
+    r+=x
+    c2=1
+if(c3==0):
+    x=A[1]-(A[0]+A[2])+1
+    r+=x
+    c3=1
+if(c1==1 and c2==1 and c3==1):
+    print(r)
