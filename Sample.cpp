@@ -44,8 +44,8 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    int T;
-    cin>>T;
+    ll T;
+    sc1(T);
     while(T--){
     }
     
