@@ -36,6 +36,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long int
+#define sc1(a) scanf("%lld",&a)
+#define sc2(a,b) scanf("%lld %lld",&a,&b)
+#define pf1(a) printf("%lld\n",a)
+#define pf2(a,b) printf("%lld %lld\n",a,b)
 int main()
 {
     ios_base::sync_with_stdio(false);
