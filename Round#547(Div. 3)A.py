@@ -1,0 +1,15 @@
+n,m=map(int,input().split())
+x=m//n
+s=0
+if(m%n!=0):
+    s=-1
+else:
+    while(x%2==0):
+        x//=2
+        s+=1
+    while(x%3==0):
+        x//=3
+        s+=1
+    if(x!=1):
+        s=-1
+print(s)
