@@ -1,0 +1,12 @@
+a,b,c,d=map(int,input().split())
+A=list()
+A.append(a)
+A.append(b)
+A.append(c)
+A.sort()
+c=0
+if((A[1]-A[0])<d):
+    c+=d-(A[1]-A[0])
+if((A[2]-A[1])<d):
+    c+=d-(A[2]-A[1])
+print(c)
