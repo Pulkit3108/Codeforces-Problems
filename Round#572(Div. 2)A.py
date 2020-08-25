@@ -1,0 +1,10 @@
+n=int(input())
+s=input()
+c1=s.count('1')
+c2=s.count('0')
+if(c1!=c2):
+    print(1)
+    print(s)
+else:
+    print(2)
+    print(s[:n-1],s[n-1])
