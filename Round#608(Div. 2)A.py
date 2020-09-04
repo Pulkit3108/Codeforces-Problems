@@ -1,0 +1,17 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+e=int(input())
+f=int(input())
+c1=0
+c2=0
+if(e<f):
+    c1+=min(d,b,c)
+    d-=c1
+    c2+=min(d,a)
+else:
+    c2+=min(d,a)
+    d-=c2
+    c1+=min(d,b,c)
+print(c2*e+c1*f)
