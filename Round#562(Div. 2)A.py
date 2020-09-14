@@ -1,0 +1,30 @@
+n,a,x,b,y=map(int,input().split())
+A=list()
+B=list()
+A.append(a)
+B.append(b)
+while(a!=x):
+    if(a<n):
+        a+=1
+    else:
+        a=1
+    A.append(a)
+while(b!=y):
+    if(b>1):
+        b-=1
+    else:
+        b=n
+    B.append(b)
+c=0
+i=0
+j=0
+while(i<len(A) and j<len(B)):
+    if(A[i]==B[j]):
+        c=1
+        break
+    i+=1
+    j+=1
+if(c==1):
+    print("YES")
+else:
+    print("NO")
