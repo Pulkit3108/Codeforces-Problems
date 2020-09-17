@@ -1,0 +1,19 @@
+a1=int(input())
+a2=int(input())
+k1=int(input())
+k2=int(input())
+n=int(input())
+r=n
+if(k1>k2):
+    k1,k2=k2,k1
+    a1,a2=a2,a1
+c1=0
+q=n//k1
+q=min(q,a1)
+n-=q*k1
+c1+=q
+q=n//k2
+q=min(q,a2)
+c1+=q
+c2=a1*(k1-1)+a2*(k2-1)
+print(max(0,r-c2),c1)
