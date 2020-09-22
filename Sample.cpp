@@ -43,6 +43,18 @@ using namespace std;
 #define vsort(v) sort(v.begin(), v.end())
 #define forn(i,n) for(ll i=0; i<n; i++)
 #define pb push_back
+const int mod=1e9+7;
+ll calc(ll a,ll b){
+    ll k=1;
+    while(b>0){
+        if(b&1){
+            k=(k*a)%mod;
+        }
+        b>>=1;
+        a=(a*a)%mod;
+    }
+    return(k%mod);
+}
 int main()
 {
     ios_base::sync_with_stdio(false);
