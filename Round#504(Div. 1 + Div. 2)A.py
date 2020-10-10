@@ -1,0 +1,33 @@
+n,m=map(int,input().split())
+s=input()
+t=input()
+if(n>m+1):
+    print('NO')
+elif(s.find('*')==-1):
+    if(s==t):
+        print('YES')
+    else:
+        print('NO')
+else:
+    c=1
+    for i in range(0,n):
+        if(s[i]=='*'):
+            break
+        elif(s[i]!=t[i]):
+            c=0
+            break
+    if(c==0):
+        print('NO')
+    else:
+        l=list(range(n-1,-1,-1))
+        p=list(range(m-1,-1,-1))
+        for i,j in zip(l,p):
+            if(s[i]=='*'):
+                break
+            elif(s[i]!=t[j]):
+                c=0
+                break
+        if(c==0):
+            print('NO')
+        else:
+            print('YES')
