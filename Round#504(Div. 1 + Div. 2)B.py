@@ -1,0 +1,10 @@
+n,k=map(int,input().split())
+if(k>n*2-1):
+    print(0)
+elif(k<=n):
+    if(k%2==0):
+        print(k//2-1)
+    else:
+        print(k//2)
+else:
+    print((2*n-k+1)//2)
