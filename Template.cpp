@@ -55,14 +55,13 @@ ll calc(ll a,ll b){
     }
     return(k%mod);
 }
-int main()
-{
+int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     ll T;
     sc1(T);
     while(T--){
+        
     }
-    
     return 0;
 }
