@@ -44,6 +44,8 @@ using namespace std;
 #define forn(i,n) for(ll i=0; i<n; i++)
 #define pb push_back
 const int mod=1e9+7;
+const int maxn = 1e3 + 7;
+const int maxm = 1e2 + 7;
 ll calc(ll a,ll b){
     ll k=1;
     while(b>0){
