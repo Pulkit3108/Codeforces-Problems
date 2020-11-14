@@ -1,1 +1,1 @@
-# Codeforces-Problems Solutions
+# Codeforces-Problem Solutions
