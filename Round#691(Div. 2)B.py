@@ -1,0 +1,9 @@
+n=int(input())
+a=0
+if(n%2==0):
+    x=n//2
+    a=(x+1)*(x+1)
+else:
+    x=n//2+1
+    a=x*(x+1)*2
+print(a)
