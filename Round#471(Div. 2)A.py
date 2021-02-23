@@ -1,0 +1,16 @@
+hh,mm=map(int,input().split())
+H,D,C,N=map(int,input().split())
+t=20*60-hh*60-mm
+t=max(t,0)
+H1=H+D*t
+c1=H1//N
+if(H1%N!=0):
+    c1+=1
+m1=(C*0.8)*c1
+c2=H//N
+if(H%N!=0):
+    c2+=1
+m2=C*c2
+m1=round(m1,4)
+m2=round(m2,4)
+print('%.4f'%min(m1,m2))
