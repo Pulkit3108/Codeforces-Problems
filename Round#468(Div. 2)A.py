@@ -1,0 +1,12 @@
+a=int(input())
+b=int(input())
+c=abs(a-b)
+r=0
+if(c%2!=0):
+    c+=1
+    r=1
+n=c//2
+f=n*(n+1)
+if(r==1):
+    f-=n
+print(f)
