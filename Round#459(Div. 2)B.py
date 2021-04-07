@@ -13,6 +13,6 @@ for i in range(m):
     ip2.append(b)
 s=list()
 for i in range(m):
-    s.append(cmd[i]+' '+ip2[i]+' ''#'+name[ip1.index(ip2[i][:-1])])
+    s.append(cmd[i]+' '+ip2[i]+' '+'#'+name[ip1.index(ip2[i][:-1])])
 for i in s:
     print(i)
