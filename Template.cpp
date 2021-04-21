@@ -55,6 +55,12 @@ ll calc(ll a,ll b){
     }
     return(k%mod);
 }
+ll MOD(ll x){
+    return (x%mod + mod)%mod;
+}
+ll mul(ll a, ll b){
+    return MOD((MOD(a)*MOD(b)));
+}
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
