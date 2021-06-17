@@ -41,6 +41,7 @@ using namespace std;
 #define vsort(v) sort(v.begin(), v.end())
 #define forn(i,n) for(ll i=0; i<n; i++)
 #define pb push_back
+long long get_min(long long a, long long b, long long c, long long d) { long long x= min(a,b); x =min(x,d); return min(x,c);}
 const int mod=1e9+7;
 const int maxn = 1e3 + 7;
 const int maxm = 1e2 + 7;
