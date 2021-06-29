@@ -45,6 +45,19 @@ long long get_min(long long a, long long b, long long c, long long d) { long lon
 const int mod=1e9+7;
 const int maxn = 1e3 + 7;
 const int maxm = 1e2 + 7;
+const int N = 1e6+5;
+vector<int> prime(N,1);                         
+void sieve()    {                               
+      prime[0]=0;     prime[1]=0;
+      for(int i=2; i<N; i++)  prime[i] = i;
+      for(int i=2; i*i<N; i++)     {
+            if(prime[i] == i)    {
+                  for(int j=i*i; j<N; j+=i)    {
+                        prime[j] = i;
+                  }
+            }
+      }
+}
 ll calc(ll a,ll b){
     ll k=1;
     while(b>0){
