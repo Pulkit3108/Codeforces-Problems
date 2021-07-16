@@ -26,7 +26,7 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
     ll T=1;
-    cin>>T;
+    //cin>>T;
     while (T--)
     {
         int n;
