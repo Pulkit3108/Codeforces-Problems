@@ -1,0 +1,9 @@
+n=int(input())
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+b.sort(reverse=True)
+s=sum(a)
+if(s>b[0]+b[1]):
+    print('NO')
+else:
+    print('YES')
