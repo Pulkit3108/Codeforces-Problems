@@ -1,0 +1,10 @@
+s=input()
+d=s.count("Danil")
+o=s.count("Olya")
+a=s.count("Ann")
+n=s.count("Nikita")
+l=s.count("Slava")
+if((d+o+a+n+l)==1):
+    print('YES')
+else:
+    print('NO')
