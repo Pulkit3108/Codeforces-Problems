@@ -1,0 +1,33 @@
+n=int(input())
+a=list(map(int,input().split()))
+p=1
+flag=True
+for i in range(n-1):
+    if(p==1):
+        if(a[i+1]>a[i]):
+            continue
+        elif(a[i+1]==a[i]):
+            p=2
+        else:
+            p=3
+    elif(p==2):
+        if(a[i+1]>a[i]):
+            flag=False
+            break
+        elif(a[i+1]==a[i]):
+            continue
+        else:
+            p=3
+    else:
+        if(a[i+1]>a[i]):
+            flag=False
+            break
+        elif(a[i+1]==a[i]):
+            flag=False
+            break
+        else:
+            continue
+if(flag):
+    print('YES')
+else:
+    print('NO')
