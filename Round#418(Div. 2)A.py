@@ -1,0 +1,23 @@
+n,k=map(int,input().split())
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+b.sort()
+s=set(b)
+z=a.count(0)
+if(z>len(s)):
+    print('No')
+else:
+    if(z==1):
+        flag=False
+        j=a.index(0)
+        for i in b:
+            a[j]=i
+            if(a!=sorted(a)):
+                flag=True
+                break   
+        if(flag):
+            print('Yes')
+        else:
+            print('No')
+    else:
+        print('Yes')
