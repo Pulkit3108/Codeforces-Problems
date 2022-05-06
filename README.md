@@ -1,1 +1,1 @@
- ### This repository contains solution of codeforces problems (Mostly Div. 2 - A,B).
+ ### This Repository Contains Solution of Codeforces Problems (Mostly Div. 2 - A,B).
