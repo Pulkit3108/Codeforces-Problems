@@ -1,3 +1,5 @@
+from sys import stdin, stdout 
+input = stdin.readline
 for _ in range(int(input())):
     n,H=map(int,input().split())
     a=list(map(int,input().split()))
@@ -10,4 +12,3 @@ for _ in range(int(input())):
         print((2*(H//(m1+m2)))+2)
     else:
         print((2*(H//(m1+m2)))+1)
-            
