@@ -9,20 +9,20 @@ int main(){
     ll T=1;
     //cin>>T;
     while(T--){
-        int b,q,l,m; 
+        ll b,q,l,m; 
         cin>>b>>q>>l>>m;
-        set<int> st;
-        for(int i=0;i<m;i++){
-            int x; 
+        set<ll> st;
+        for(ll i=0;i<m;i++){
+            ll x; 
             cin>>x;
             st.insert(x);
         }
-        int p=0;
+        ll p=0;
         while(abs(b)<=l){
             if(st.count(b)==0){ 
                 p+=1;
             }
-            int x=b;
+            ll x=b;
             b*=q;
             if(abs(x)==abs(b)){
                 if(st.count(x) && st.count(b)){
@@ -39,4 +39,3 @@ int main(){
     }
     return 0;
 }
-
